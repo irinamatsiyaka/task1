@@ -1,6 +1,8 @@
 :root {
    --innowise-black: #353535;
    --main-marketing: #54bd95;
+
+   --font-family: "Inter", sans-serif;
 }
 
 body {
@@ -21,22 +23,25 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
    margin: 0;
 }
 
-/* Container */
-.container {
-   width: 100%;
-   padding: 120px 156px;
-   box-sizing: border-box;
+h1 {
+   font-family: var(--font-family);
+   font-weight: 900;
+   font-size: 70px;
+   text-transform: uppercase;
+   color: #191a15;
+   line-height: 1.2;
 }
-
-/* Intro */
-.intro {
-   width: 100%;
-   height: 100vh;
-   background-color: #ecf4f6;
+h2 {
+   font-family: var(--font-family);
+   font-weight: 600;
+   font-size: 48px;
+   color: #000;
+   line-height: 1.2;
 }
 
 /* Header */
@@ -53,9 +58,17 @@ header {
    align-items: center;
 }
 
-.header__content {
+/* .header__content {
    display: flex;
    gap: 12px;
+} */
+
+.header__list {
+   display: flex;
+   gap: 12px;
+   list-style: none;
+   margin: 0;
+   padding: 0;
 }
 
 .header__link {
@@ -84,4 +97,203 @@ header {
    background-color: var(--main-marketing);
    color: #fff;
    padding: 8px 24px;
+}
+
+/* Intro */
+.intro {
+   width: 100%;
+   height: 100vh;
+   background-color: #ecf4f6;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.intro__content {
+   max-width: 504px;
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+}
+
+.intro__text {
+   font-family: var(--font-family);
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 167%;
+   color: #000;
+}
+button.intro__button {
+   width: 170px;
+   height: 56px;
+   border-radius: 11px;
+   background-color: var(--main-marketing);
+   color: #fff;
+   padding: 8px 24px;
+   border: none;
+   cursor: pointer;
+   font-size: 16px;
+}
+
+.intro__image {
+   position: relative;
+}
+
+.intro__lamp {
+   border-radius: 11px;
+}
+
+.intro__decor {
+   position: absolute;
+   z-index: 100;
+}
+
+.intro__decor--cactus {
+   top: 45%;
+   left: 90%;
+}
+.intro__decor--cup {
+   top: 89%;
+   left: 23%;
+}
+
+.intro__decor--ystatictic {
+   top: 93%;
+   left: 80%;
+}
+.intro__decor--bstatictic {
+   top: 13%;
+   left: 95%;
+}
+.intro__decor--energy {
+   top: 30%;
+   right: 97%;
+}
+
+/* Container */
+.container {
+   width: 100%;
+   padding: 120px 156px;
+   box-sizing: border-box;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.plato__text {
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+   max-width: 513px;
+}
+.plato__image {
+   max-width: 543px;
+}
+.plato__link {
+   font-family: var(--second-family);
+   font-weight: 600;
+   font-size: 16px;
+   color: #353535;
+}
+
+/* Support */
+.support {
+   background-color: #f9f8fe;
+}
+
+.support__inner {
+   display: flex;
+}
+
+.support__header {
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+
+.support__title {
+   font-family: var(--font-family);
+   font-weight: 600;
+   font-size: 48px;
+   color: #191a15;
+}
+
+.support__subtitle {
+   font-family: var(--font-family);
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 187%;
+   color: #979797;
+   max-width: 500px;
+}
+
+.support__ratings {
+   display: flex;
+   gap: 40px;
+   margin-top: 28px;
+}
+
+.support__rating {
+   display: flex;
+   flex-direction: column;
+   gap: 4px;
+}
+
+.support__stats {
+   display: flex;
+   flex-direction: column;
+   gap: 32px;
+}
+
+.support__company {
+   font-family: var(--font-family);
+   font-weight: 500;
+   font-size: 18px;
+   color: #979797;
+}
+
+.support__stat {
+   display: flex;
+   align-items: flex-start;
+   gap: 16px;
+}
+
+.support__icon-box {
+   width: 63px;
+   height: 60px;
+   border-radius: 6px;
+   background: #fff;
+   box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.05);
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-shrink: 0;
+}
+
+.support__icon {
+   width: 32px;
+   height: 32px;
+   object-fit: contain;
+}
+
+.support__stat-content {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.support__stat-value {
+   font-family: var(--font-family);
+   font-weight: 700;
+   font-size: 24px;
+   color: #191a15;
+}
+
+.support__stat-text {
+   font-family: var(--font-family);
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 167%;
+   color: #979797;
+   max-width: 456px;
 }
