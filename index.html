@@ -17,30 +17,30 @@
    <body>
       <header>
          <div class="header__side"></div>
-         <nav class="header__content">
+         <nav class="header__content" aria-label="Main navigation">
             <ul class="header__list">
                <li class="header__item">
-                  <a class="header__link" href="/">Home</a>
+                  <a class="header__link" href="#intro">Home</a>
                </li>
                <li class="header__item">
-                  <a class="header__link" href="/products">Products</a>
+                  <a class="header__link" href="#products">Products</a>
                </li>
                <li class="header__item">
-                  <a class="header__link" href="/specifications"
-                     >Specifications</a
+                  <a class="header__link" href="#specs">
+                     Specifications</a
                   >
                </li>
                <li class="header__item">
-                  <a class="header__link" href="/statistics">Statistics</a>
+                  <a class="header__link" href="#statistics">Statistics</a>
                </li>
                <li class="header__item">
-                  <a class="header__link" href="/contact">Contact us</a>
+                  <a class="header__link" href="#contact">Contact us</a>
                </li>
             </ul>
          </nav>
 
          <div class="header__buttons">
-            <button class="header__button header__button--search">
+            <button class="header__button header__button--search" aria-label="Open search form">
                Search
             </button>
             <button class="header__button header__button--contact">
@@ -49,7 +49,7 @@
          </div>
       </header>
       <main id="main">
-         <section class="intro">
+         <section class="intro" id="intro">
             <div class="container">
                <div class="intro__content">
                   <div class="intro__text-block">
@@ -63,44 +63,20 @@
                      </p>
                   </div>
 
-                  <button class="button intro__button">Create request</button>
+                  <button class="intro__button">Create request</button>
                </div>
 
                <div class="intro__image">
                   <img
                      src="./assets/imgs/lamp.png"
-                     alt="Lamp"
+                     alt="Modern black desk lamp with a golden stand, placed on a white background"
                      class="intro__lamp"
-                  />
-                  <img
-                     src="./assets/icons/cactus.svg"
-                     alt="Cactus"
-                     class="intro__decor intro__decor--cactus"
-                  />
-                  <img
-                     src="./assets/icons/cup.svg"
-                     alt="Cup"
-                     class="intro__decor intro__decor--cup"
-                  />
-                  <img
-                     src="./assets/icons/yellow_statistic.svg"
-                     alt="Yellow statistic"
-                     class="intro__decor intro__decor--ystatictic"
-                  />
-                  <img
-                     src="./assets/icons/blue_statistic.svg"
-                     alt="Blue statistic"
-                     class="intro__decor intro__decor--bstatictic"
-                  />
-                  <img
-                     src="./assets/icons/green_energy.svg"
-                     alt="Blue statistic"
-                     class="intro__decor intro__decor--energy"
+                     role="presentation"
                   />
                </div>
             </div>
          </section>
-         <section class="plato">
+         <section class="plato" id="plato">
             <div class="container">
                <div class="plato__text">
                   <h2>Plato</h2>
@@ -121,14 +97,14 @@
                </div>
                <img
                   src="./assets/imgs/plant.png"
-                  alt="plant"
+                  alt="Green indoor plant in a white pot, standing against a light background"
                   class="plato__image"
                />
             </div>
          </section>
-         <section class="support">
+         <section class="support" id="statistics">
             <div class="container support__inner">
-               <div class="plato__text">
+               <div class="support__text">
                   <div class="support__header">
                      <h2 class="support__title">How we support our partner</h2>
                      <p class="support__subtitle">
@@ -142,7 +118,7 @@
                      <div class="support__rating">
                         <img
                            src="./assets/imgs/five_stars.png"
-                           alt="five stars"
+                           alt="Five gold stars representing a 4.9 rating"
                            class="support__stars"
                         />
                         <p class="support__score">
@@ -154,7 +130,7 @@
                      <div class="support__rating">
                         <img
                            src="./assets/imgs/four_stars.png"
-                           alt="four stars"
+                           alt="Four gold stars representing a 4.8 rating"
                            class="support__stars"
                         />
                         <p class="support__score">
@@ -170,7 +146,7 @@
                      <div class="support__icon-box">
                         <img
                            src="./assets/icons/pulse.svg"
-                           alt="pulse icon"
+                           alt="Pulse line icon, symbolizing activity monitoring"
                            class="support__icon"
                         />
                      </div>
@@ -188,7 +164,7 @@
                      <div class="support__icon-box">
                         <img
                            src="./assets/icons/pie-chart.svg"
-                           alt="pie chart icon"
+                           alt="Pie chart icon, symbolizing data analytics"
                            class="support__icon"
                         />
                      </div>
@@ -204,7 +180,7 @@
                      <div class="support__icon-box">
                         <img
                            src="./assets/icons/command.svg"
-                           alt="command icon"
+                           alt="Command icon, symbolizing teamwork and control"
                            class="support__icon"
                         />
                      </div>
@@ -218,22 +194,25 @@
                </div>
             </div>
          </section>
-         <section class="products">
+         <section class="products" id="products">
             <div class="container products__inner">
                <h2 class="products__title">Products and services</h2>
 
                <div class="products__grid">
                   <!-- BIG -->
-                  <article class="products__card products__card--analytics">
+                  <article class="products__card products__card--analytics" aria-labelledby="analytics-title">
                      <div
                         class="products__media products__media--lg products__media--shadow"
                      >
                         <div class="products__crop">
                            <img
-                              src="./assets/icons/analitics.svg"
-                              alt="Analytics"
+                              src="./assets/imgs/analitics.svg"
+                              alt="Abstract analytics chart icon with bars and lines"
                               class="products__img"
                            />
+                           <!-- <svg width="544" height="665" >
+    <use href="assets/sprite.svg#icon-analitics"></use>
+  </svg> -->
                         </div>
                      </div>
                      <h3 class="products__card-title">Analytics</h3>
@@ -247,8 +226,8 @@
                      >
                         <div class="products__crop">
                            <img
-                              src="./assets/icons/print.svg"
-                              alt="Print"
+                              src="./assets/imgs/print.svg"
+                              alt="Print icon representing document printing"
                               class="products__img"
                            />
                         </div>
@@ -260,12 +239,12 @@
                   <!-- SMALL -->
                   <article class="products__card products__card--studio">
                      <div
-                        class="products__media products__media--st products__media--shadow"
+                        class="products__media products__media--md products__media--shadow"
                      >
                         <div class="products__crop">
                            <img
-                              src="./assets/icons/studio.svg"
-                              alt="Creative Studio"
+                              src="./assets/imgs/studio.svg"
+                              alt="Creative studio icon with a pen and color palette"
                               class="products__img"
                            />
                         </div>
@@ -281,9 +260,9 @@
                      >
                         <div class="products__crop">
                            <img
-                              src="./assets/icons/marketing.svg"
-                              alt="Influencer marketing"
-                              class="products__img is-crop-20"
+                              src="./assets/imgs/marketing.svg"
+                              alt="Megaphone icon symbolizing influencer marketing"
+                              class="products__img products__img--crop-20"
                            />
                         </div>
                      </div>
@@ -298,9 +277,9 @@
                      >
                         <div class="products__crop">
                            <img
-                              src="./assets/icons/digital.svg"
-                              alt="Digital"
-                              class="products__img is-crop-20"
+                              src="./assets/imgs/digital.svg"
+                              alt="Digital technology icon with layered rectangles"
+                              class="products__img products__img--crop-20"
                            />
                         </div>
                      </div>
@@ -316,8 +295,8 @@
                         <div class="products__crop">
                            <img
                               src="./assets/imgs/event.png"
-                              alt="Event"
-                              class="products__img is-crop-20"
+                              alt="People attending an indoor corporate event with bright lights"
+                              class="products__img products__img--crop-20"
                            />
                         </div>
                      </div>
@@ -328,7 +307,7 @@
             </div>
          </section>
 
-         <section class="specs" aria-labelledby="specs-title">
+         <section class="specs" id="specs" aria-labelledby="specs-title">
             <div class="container specs__inner">
                <h2 class="specs__title" id="specs-title">Specifications</h2>
                <div class="specs__info">
@@ -369,7 +348,7 @@
             </div>
          </section>
 
-         <section class="team" aria-labelledby="team-title">
+         <section class="team" id="team" aria-labelledby="team-title">
             <div class="container team__inner">
                <h2 class="team__title" id="team-title">Event</h2>
 
@@ -378,7 +357,7 @@
                      <img
                         class="team__avatar"
                         src="./assets/imgs/person1.png"
-                        alt="team__avatar"
+                        alt="Portrait photo of team member, smiling man in business casual outfit"
                         loading="lazy"
                      />
                      <h3 class="team__name">Event</h3>
@@ -388,7 +367,7 @@
                      <img
                         class="team__avatar"
                         src="./assets/imgs/person2.png"
-                        alt="team__avatar"
+                        alt="Portrait photo of team member, young woman with long brown hair"
                         loading="lazy"
                      />
                      <h3 class="team__name">Event</h3>
@@ -398,7 +377,7 @@
                      <img
                         class="team__avatar"
                         src="./assets/imgs/person3.png"
-                        alt="team__avatar"
+                        alt="Portrait photo of team member, man with glasses in dark jacket"
                         loading="lazy"
                      />
                      <h3 class="team__name">Event</h3>
@@ -408,7 +387,7 @@
                      <img
                         class="team__avatar"
                         src="./assets/imgs/person4.png"
-                        alt="team__avatar"
+                        alt="Portrait photo of team member, woman with short blonde hair smiling"
                         loading="lazy"
                      />
                      <h3 class="team__name">Event</h3>
@@ -418,7 +397,7 @@
                      <img
                         class="team__avatar"
                         src="./assets/imgs/person5.png"
-                        alt="team__avatar"
+                        alt="Portrait photo of team member, young man with curly hair"
                         loading="lazy"
                      />
                      <h3 class="team__name">Event</h3>
@@ -428,20 +407,20 @@
                      <img
                         class="team__avatar"
                         src="./assets/imgs/person6.png"
-                        alt="team__avatar"
+                        alt="Portrait photo of team member, woman with straight black hair"
                         loading="lazy"
                      />
                      <h3 class="team__name">Event</h3>
                      <p class="team__meta">1 products</p>
                   </li>
                </ul>
-               <button class="team__button team__button--contact">
+               <button class="team__button">
                   Show all contacts
                </button>
             </div>
          </section>
 
-         <section class="contact" aria-labelledby="contact-title">
+         <section class="contact" id="contact">
             <div class="contact__inner">
                <h2 class="contact__title" id="contact-title">Get in touch</h2>
 
@@ -523,7 +502,13 @@
                      </div>
                   </aside>
                </div>
-               <img src="./assets/imgs/map.png" class = "contact__map"alt="">
+               <iframe
+         class="contact__map"
+         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093745!2d144.9537363153159!3d-37.81627974202167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5771c3caa9c0e0!2sW%2028th%20St%2C%20Chicago%20IL!5e0!3m2!1sen!2sus!4v1635640988726!5m2!1sen!2sus"
+         allowfullscreen=""
+         loading="lazy"
+         referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
             </div>
          </section>
      </main>
@@ -544,10 +529,10 @@
             <nav class="footer__nav" aria-label="What we do">
                <h3 class="footer__heading">What we do</h3>
                <ul class="footer__menu">
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">Our realizacje</a></li>
-                  <li><a href="#">FAQ</a></li>
-                  <li><a href="#">Contact</a></li>
+                  <li><a href="#" class = 'footer__menu-link'>About us</a></li>
+                  <li><a href="#" class = 'footer__menu-link'>Our realizacje</a></li>
+                  <li><a href="#" class = 'footer__menu-link'>FAQ</a></li>
+                  <li><a href="#" class = 'footer__menu-link'>Contact</a></li>
             </ul>
             </nav>
 
@@ -572,3 +557,4 @@
       
    </body>
 </html>
+
