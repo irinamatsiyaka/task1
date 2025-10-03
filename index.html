@@ -5,18 +5,20 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Design with Us</title>
       <link rel="stylesheet" href="assets/css/style.css" />
-      <link rel="preconnect"
-         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+      <link
+         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
          rel="stylesheet"
       />
-      <link rel="preconnect"
+      <link
          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap"
          rel="stylesheet"
       />
    </head>
    <body>
       <header>
-         <div class="header__side"></div>
          <nav class="header__content" aria-label="Main navigation">
             <ul class="header__list">
                <li class="header__item">
@@ -26,9 +28,7 @@
                   <a class="header__link" href="#products">Products</a>
                </li>
                <li class="header__item">
-                  <a class="header__link" href="#specs">
-                     Specifications</a
-                  >
+                  <a class="header__link" href="#specs"> Specifications</a>
                </li>
                <li class="header__item">
                   <a class="header__link" href="#statistics">Statistics</a>
@@ -40,7 +40,10 @@
          </nav>
 
          <div class="header__buttons">
-            <button class="header__button header__button--search" aria-label="Open search form">
+            <button
+               class="header__button header__button--search"
+               aria-label="Open search form"
+            >
                Search
             </button>
             <button class="header__button header__button--contact">
@@ -50,7 +53,7 @@
       </header>
       <main id="main">
          <section class="intro" id="intro">
-            <div class="container">
+            <div class="intro__container">
                <div class="intro__content">
                   <div class="intro__text-block">
                      <h1 class="intro__title">Design<br />with us</h1>
@@ -71,7 +74,6 @@
                      src="./assets/imgs/lamp.png"
                      alt="Modern black desk lamp with a golden stand, placed on a white background"
                      class="intro__lamp"
-                     role="presentation"
                   />
                </div>
             </div>
@@ -103,7 +105,7 @@
             </div>
          </section>
          <section class="support" id="statistics">
-            <div class="container support__inner">
+            <div class="support__container support__inner">
                <div class="support__text">
                   <div class="support__header">
                      <h2 class="support__title">How we support our partner</h2>
@@ -200,7 +202,10 @@
 
                <div class="products__grid">
                   <!-- BIG -->
-                  <article class="products__card products__card--analytics" aria-labelledby="analytics-title">
+                  <article
+                     class="products__card products__card--analytics"
+                     aria-labelledby="analytics-title"
+                  >
                      <div
                         class="products__media products__media--lg products__media--shadow"
                      >
@@ -215,12 +220,17 @@
   </svg> -->
                         </div>
                      </div>
-                     <h3 class="products__card-title">Analytics</h3>
+                     <h3 class="products__card-title" id="analytics-title">
+                        Analytics
+                     </h3>
                      <p class="products__card-meta">5 products</p>
                   </article>
 
                   <!-- SMALL  -->
-                  <article class="products__card products__card--print">
+                  <article
+                     class="products__card products__card--print"
+                     aria-labelledby="print-title"
+                  >
                      <div
                         class="products__media products__media--sm products__media--shadow"
                      >
@@ -232,12 +242,17 @@
                            />
                         </div>
                      </div>
-                     <h3 class="products__card-title">Print</h3>
+                     <h3 class="products__card-title" id="print-title">
+                        Print
+                     </h3>
                      <p class="products__card-meta">2 products</p>
                   </article>
 
                   <!-- SMALL -->
-                  <article class="products__card products__card--studio">
+                  <article
+                     class="products__card products__card--studio"
+                     aria-labelledby="studio-title"
+                  >
                      <div
                         class="products__media products__media--md products__media--shadow"
                      >
@@ -249,12 +264,17 @@
                            />
                         </div>
                      </div>
-                     <h3 class="products__card-title">Creative Studio</h3>
+                     <h3 class="products__card-title" id="studio-title">
+                        Creative Studio
+                     </h3>
                      <p class="products__card-meta">11 products</p>
                   </article>
 
                   <!-- SMALL -->
-                  <article class="products__card products__card--marketing">
+                  <article
+                     class="products__card products__card--marketing"
+                     aria-labelledby="marketing-title"
+                  >
                      <div
                         class="products__media products__media--sm products__media--shadow"
                      >
@@ -266,12 +286,17 @@
                            />
                         </div>
                      </div>
-                     <h3 class="products__card-title">Influencer marketing</h3>
+                     <h3 class="products__card-title" id="marketing-title">
+                        Influencer marketing
+                     </h3>
                      <p class="products__card-meta">11 products</p>
                   </article>
 
                   <!-- SMALL-->
-                  <article class="products__card products__card--digital">
+                  <article
+                     class="products__card products__card--digital"
+                     aria-labelledby="digital-title"
+                  >
                      <div
                         class="products__media products__media--sm products__media--shadow"
                      >
@@ -283,12 +308,17 @@
                            />
                         </div>
                      </div>
-                     <h3 class="products__card-title">Digital</h3>
+                     <h3 class="products__card-title" id="digital-title">
+                        Digital
+                     </h3>
                      <p class="products__card-meta">2 products</p>
                   </article>
 
                   <!-- BIG -->
-                  <article class="products__card products__card--event">
+                  <article
+                     class="products__card products__card--event"
+                     aria-labelledby="event-title"
+                  >
                      <div
                         class="products__media products__media--lg products__media--shadow"
                      >
@@ -300,7 +330,9 @@
                            />
                         </div>
                      </div>
-                     <h3 class="products__card-title">Event</h3>
+                     <h3 class="products__card-title" id="event-title">
+                        Event
+                     </h3>
                      <p class="products__card-meta">1 products</p>
                   </article>
                </div>
@@ -350,7 +382,7 @@
 
          <section class="team" id="team" aria-labelledby="team-title">
             <div class="container team__inner">
-               <h2 class="team__title" id="team-title">Event</h2>
+               <h2 class="team__title" id="team-title">Our team</h2>
 
                <ul class="team__grid">
                   <li class="team__card">
@@ -414,9 +446,7 @@
                      <p class="team__meta">1 products</p>
                   </li>
                </ul>
-               <button class="team__button">
-                  Show all contacts
-               </button>
+               <button class="team__button">Show all contacts</button>
             </div>
          </section>
 
@@ -431,51 +461,65 @@
                      method="post"
                      autocomplete="off"
                   >
-                     <h4 class="contact__form-title">Send a Message</h4>
-                     <p class="contact__form-note">Specifications</p>
+                     <div class="contact__form-head">
+                        <h4 class="contact__form-title">Send a Message</h4>
+                        <p class="contact__form-note">Specifications</p>
+                     </div>
 
-                     <label class="contact__field">
-                        <span class="contact__label">Name</span>
-                        <input class="contact__input" type="text" name="name" />
-                     </label>
+                     <div class="contact__fields">
+                        <label class="contact__field">
+                           <span class="contact__label">Name</span>
+                           <input
+                              class="contact__input"
+                              type="text"
+                              name="name"
+                           />
+                        </label>
 
-                     <label class="contact__field">
-                        <span class="contact__label">Email Address</span>
-                        <input
-                           class="contact__input"
-                           type="email"
-                           name="email"
-                        />
-                     </label>
+                        <label class="contact__field">
+                           <span class="contact__label">Email Address</span>
+                           <input
+                              class="contact__input"
+                              type="email"
+                              name="email"
+                           />
+                        </label>
 
-                     <label class="contact__field">
-                        <span class="contact__label">City</span>
-                        <input class="contact__input" type="text" name="city" />
-                     </label>
+                        <label class="contact__field">
+                           <span class="contact__label">City</span>
+                           <input
+                              class="contact__input"
+                              type="text"
+                              name="city"
+                           />
+                        </label>
 
-                     <label class="contact__field">
-                        <span class="contact__label">Phone number</span>
-                        <input class="contact__input" type="tel" name="phone" />
-                     </label>
+                        <label class="contact__field">
+                           <span class="contact__label">Phone number</span>
+                           <input
+                              class="contact__input"
+                              type="tel"
+                              name="phone"
+                           />
+                        </label>
 
-                     <label class="contact__field contact__field--wide">
-                        <span class="contact__label">Message</span>
-                        <textarea
-                           class="contact__input contact__textarea"
-                           name="message"
-                        ></textarea>
-                     </label>
+                        <label class="contact__field contact__field--wide">
+                           <span class="contact__label">Message</span>
+                           <textarea
+                              class="contact__input contact__textarea"
+                              name="message"
+                           ></textarea>
+                        </label>
 
-                     
-
-                     <button class="contact__btn" type="submit">
-                        Show all products
-                     </button>
+                        <button class="contact__btn" type="submit">
+                           Show all products
+                        </button>
+                     </div>
                   </form>
 
                   <aside class="contact__info">
                      <div class="contact__info-block">
-                        <h4 class="contact__info-title">Call Us</h3>
+                        <h4 class="contact__info-title">Call Us</h4>
                         <p class="contact__info-text">
                            Lorem Ipsum is simply dummy text of the printing and
                            typesetting industry. Lorem Ipsum has been the.
@@ -503,17 +547,17 @@
                   </aside>
                </div>
                <iframe
-         class="contact__map"
-         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093745!2d144.9537363153159!3d-37.81627974202167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5771c3caa9c0e0!2sW%2028th%20St%2C%20Chicago%20IL!5e0!3m2!1sen!2sus!4v1635640988726!5m2!1sen!2sus"
-         allowfullscreen=""
-         loading="lazy"
-         referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+                  class="contact__map"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093745!2d144.9537363153159!3d-37.81627974202167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5771c3caa9c0e0!2sW%2028th%20St%2C%20Chicago%20IL!5e0!3m2!1sen!2sus!4v1635640988726!5m2!1sen!2sus"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+               ></iframe>
             </div>
          </section>
-     </main>
+      </main>
 
-     <footer class="footer" aria-labelledby="footer-title">
+      <footer class="footer" aria-labelledby="footer-title">
          <div class="footer__inner">
             <h2 class="footer__title" id="footer-title">Get in touch</h2>
 
@@ -523,38 +567,53 @@
                <p class="footer__text">W 28th St, Chicago</p>
 
                <p class="footer__label">Contact:</p>
-               <a class="footer__link" href="mailto:kontakt@name.com.pl">kontakt@name.com.pl</a>
+               <a class="footer__link" href="mailto:kontakt@name.com.pl"
+                  >kontakt@name.com.pl</a
+               >
             </div>
 
             <nav class="footer__nav" aria-label="What we do">
                <h3 class="footer__heading">What we do</h3>
                <ul class="footer__menu">
-                  <li><a href="#" class = 'footer__menu-link'>About us</a></li>
-                  <li><a href="#" class = 'footer__menu-link'>Our realizacje</a></li>
-                  <li><a href="#" class = 'footer__menu-link'>FAQ</a></li>
-                  <li><a href="#" class = 'footer__menu-link'>Contact</a></li>
-            </ul>
+                  <li><a href="#" class="footer__menu-link">About us</a></li>
+                  <li>
+                     <a href="#" class="footer__menu-link">Our realizacje</a>
+                  </li>
+                  <li><a href="#" class="footer__menu-link">FAQ</a></li>
+                  <li><a href="#" class="footer__menu-link">Contact</a></li>
+               </ul>
             </nav>
 
             <div class="footer__social">
                <h3 class="footer__heading">Get in touch</h3>
                <ul class="footer__social-list">
                   <li>
-                     <a class="footer__social-link" href="#" aria-label="Facebook">
-                        <img src="./assets/icons/Facebook.svg" alt="">
+                     <a
+                        class="footer__social-link"
+                        href="#"
+                        aria-label="Facebook"
+                     >
+                        <img
+                           src="./assets/icons/Facebook.svg"
+                           alt="Facebook icon"
+                        />
                      </a>
                   </li>
                   <li>
-                     <a class="footer__social-link" href="#" aria-label="Instagram">
-                         <img src="./assets/icons/Vector.svg" alt="">
+                     <a
+                        class="footer__social-link"
+                        href="#"
+                        aria-label="Instagram"
+                     >
+                        <img
+                           src="./assets/icons/Vector.svg"
+                           alt="Instagram icon"
+                        />
                      </a>
                   </li>
-                </ul>
+               </ul>
             </div>
          </div>
       </footer>
-
-      
    </body>
 </html>
-
