@@ -529,6 +529,13 @@ header {
    width: 100%;
    text-align: left;
 }
+.specs__item-title {
+   font-family: var(--font-family);
+   font-weight: 700;
+   font-size: 18px;
+   color: #000;
+   height: 25px;
+}
 
 .specs__info {
    margin-top: 40px;
@@ -618,12 +625,14 @@ h4.contact__title {
    font-size: 24px;
    color: #fff;
 }
-h4.contact__form-title,
+h3.contact__form-title,
 .contact__info-title {
    font-family: var(--font-family);
    font-weight: 600;
    font-size: 24px;
    color: #fff;
+   height: 25px;
+   line-height: 100%;
 }
 
 p.contact__info-strong {
@@ -815,7 +824,7 @@ p.contact__info-strong {
    font-family: var(--font-family);
    font-weight: 600;
    font-size: 16px;
-   line-height: 150%;
+   line-height: 160%;
    letter-spacing: -0.01em;
    color: #fff;
 }
